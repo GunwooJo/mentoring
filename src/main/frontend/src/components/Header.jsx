@@ -88,7 +88,7 @@ function Header() {
             <AppBar position="static">
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                    <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+                    
                     <Typography
                         variant="h6"
                         noWrap
@@ -104,7 +104,8 @@ function Header() {
                         textDecoration: 'none',
                         }}
                     >
-                        LOGO
+                        <img src={process.env.PUBLIC_URL + '/img/free_icon_mentorship_6681067.png'} style={{width: '40px', height: '40px', marginRight: '10px', marginTop: '10px'}} alt="메인로고"/>
+                        <p>멘토링</p>
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
